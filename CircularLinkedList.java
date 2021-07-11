@@ -14,6 +14,17 @@ public class CircularLinkedList{
     Node head;
     Node tail;
 
+    public static void main(String[] args)
+    {
+        CircularLinkedList circularLinkedList = new CircularLinkedList();
+
+        circularLinkedList.add(10); 
+        circularLinkedList.add(5); 
+        circularLinkedList.add(8); 
+
+        circularLinkedList.display();
+    }
+
     void add(int data)
     {
         Node newNode = new Node(data);
@@ -27,13 +38,32 @@ public class CircularLinkedList{
             return;
         }
 
-       while(current != null)
+       while(true)
        {
 
-            
-
+            if(current==tail)
+            {
+                current.next = newNode;
+                newNode.next = head;
+                tail = newNode;
+                return;
+            }
             current = current.next;
        }
         
+    }
+
+    void display()
+    {
+        Node current = head;
+
+
+        while(current!=tail)
+        {
+            System.out.print(current.data + " ");        
+            current = current.next; 
+        }
+        System.out.print(current.data + " ");
+
     }
 }
