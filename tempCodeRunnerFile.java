@@ -1,1 +1,1 @@
-System.out.println(current.data);
+ar[i] >= temp
