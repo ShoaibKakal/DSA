@@ -1,1 +1,2 @@
-ar[i] >= temp
+int size = scanner.nextInt();
+    // in
