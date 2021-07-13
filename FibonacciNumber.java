@@ -6,18 +6,21 @@ public class FibonacciNumber {
   }
 
   void calculate(int x) {
-    int prev = 0;
-    int sum = 1;
+    long prev = 0;
+    long sum = 1;
     for (int i = 1; i <= x; i++) {
-      if (i == 1) {
+      if (x == 1) {
         System.out.print("0 ");
-      } else if (i == 2 || i == 3) {
+      } else if (x == 2 || x == 3) {
         System.out.print("1 ");
-      } else {
+      } 
+      if(i!=1 && i!=2) {
         prev = sum - prev;
         sum = sum + prev;
-        System.out.print(sum + " ");
       }
     }
+    System.out.print(sum + " ");
+
+    
   }
 }

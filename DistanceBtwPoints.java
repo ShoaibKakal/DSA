@@ -3,7 +3,7 @@ public class DistanceBtwPoints{
     public static void main(String[] args)
     {
 
-        int x = calcDisplacement(31.1497079, 74.3239235, 31.0972693, 74.4589738);
+        int x = calcDisplacement(31.1497079, 74.3239235, 48.2161875, -75.0789421);
         System.out.println("distance is " + x + " km");
     }
 
