@@ -1,2 +1,1 @@
-int size = scanner.nextInt();
-    // in
+eturn arr[0] * arr[arr.length - 1];
