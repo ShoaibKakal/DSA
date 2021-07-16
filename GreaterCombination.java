@@ -13,6 +13,7 @@ public class GreaterCombination {
 
             for(int j=0; j<ar.length; j++)
             {
+                
                 if(ar[i]>ar[j])
                 {
                     temp = ar[i];
