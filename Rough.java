@@ -2,24 +2,20 @@ public class Rough {
     
     public static void main(String args[])
     {
-        int ar[] = {1,2,3,4,5,6,7,8};
-        fun(4);
+       
+        fun(5);
     }
 
-
-    static int count =0;
     static void fun(int n)
     {
         
-       
+        for(int i=0; i<n; i++)   
+        {
+            System.out.println("Deep Dive into Big-O");    
+        }
 
-        count++;
-        System.out.println(count);
-        if(n==1)
-            return;
-           
-        fun(n-1);
-        fun(n-1);
+        String name = "Shoaib Khalid";
+        System.out.println(name);
     }
   
 }
